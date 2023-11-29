@@ -1,0 +1,86 @@
+/* EventList.css */
+
+.event-list {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  .event-list-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .date-info {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .date {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .day {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .events-container {
+    padding: 20px;
+  }
+  
+  .event-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .event-details {
+    width: 70%;
+  }
+  
+  .event-name {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .event-time {
+    color: #555;
+  }
+  
+  .event-location {
+    margin-top: 5px;
+    color: #888;
+  }
+  
+  .event-description {
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .event-image {
+    width: 30%;
+    overflow: hidden;
+  }
+  
+  .event-options {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+  }
+  
+  .event-options-item {
+    margin-right: 10px;
+  }
+  
+  .event-options-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  

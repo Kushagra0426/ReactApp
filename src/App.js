@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import EventForm from './components/EventForm';
+import EventList from './components/EventList';
+import './App.css'; // Import the main stylesheet for styling
 
-function App() {
+const App = () => {
+  const [events, setEvents] = useState([]);
+
+  const handleEventCreate = (newEvent) => {
+    setEvents([...events, newEvent]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* Navbar */}
+        <nav className="navbar">
+          <Link to="/">
+            <button className="events-button">Create Event</button>
+          </Link>
+          <Link to="/events">
+            <button className="events-button">Events</button>
+          </Link>
+        </nav>
+
+        {/* Content */}
+        <div className="content">
+          <Routes>
+            <Route
+              path="/"
+              element={<EventForm onEventCreate={handleEventCreate} />}
+            />
+            <Route path="/events" element={<EventList events={events} />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

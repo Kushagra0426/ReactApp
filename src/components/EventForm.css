@@ -1,0 +1,133 @@
+.event-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-form h2 {
+    text-align: center;
+  }
+  
+  .event-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .event-form input,
+  .event-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+
+  .event-form label input[type="file"] {
+    margin-top: 5px;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  
+  .event-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .event-form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  /* Multi-Session Event Styles */
+  
+  .event-form-checkbox-multi-session {
+    margin-top: 10px;
+  }
+  
+  .multi-session-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .multi-session-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .multi-session-container input {
+    width: calc(100% - 20px);
+  }
+  
+  .multi-session-container button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
